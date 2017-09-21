@@ -78,7 +78,7 @@ def all_supplies_in_holidays(holiday_hash)
     puts season_string
     holiday_collection.each do | holiday, supplies_already_there |
         #capitalizing and putting holiday
-      holiday_string = "  " + holiday.to_s.sub("_", " ").split.each { |x| x.capitalize!}.join(" ") + ": "
+      holiday_string = "  " + holiday.to_s.tr("_", " ").split.each { |x| x.capitalize!}.join(" ") + ": "
       supplies_string = supplies_already_there.join(", ")
       #binding.pry
       puts holiday_string + supplies_string

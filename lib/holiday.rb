@@ -91,7 +91,6 @@ def all_holidays_with_bbq(holiday_hash)
       holiday_to_add = holiday
       if supplies_already_there.include?("BBQ")
         returnable_array << holiday_to_add
-        binding.pry
       end
     end
   returnable_array

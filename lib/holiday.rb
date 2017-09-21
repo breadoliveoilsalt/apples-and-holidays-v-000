@@ -88,6 +88,7 @@ def all_holidays_with_bbq(holiday_hash)
   returnable_array = [ ]
   holiday_hash.each do | season, holiday_collection |
     holiday_collection.each do | holiday, supplies_already_there |
+      binding.pry
       if supplies_already_there.include?("BBQ")
         returnable_array << holiday
       end

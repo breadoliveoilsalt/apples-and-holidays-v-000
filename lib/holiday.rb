@@ -90,7 +90,8 @@ def all_holidays_with_bbq(holiday_hash)
     holiday_collection.each do | holiday, supplies_already_there |
       if supplies_already_there.include?("BBQ")
         returnable_array << holiday
+      end
     end
   end
-    
+
 end
